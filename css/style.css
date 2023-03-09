@@ -1,0 +1,15 @@
+/* imports das fontes */
+    @font-face {
+        font-family:titiliumweb-black;
+        src: url(../assets/fonts/Titillium_Web\ \(2\)/titiliumweb-black);
+    }
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: 0;
+}
+
+/* mobile firts */
+h1{
+    font-family: 
+}
