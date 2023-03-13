@@ -1,13 +1,23 @@
 /* imports das fontes */
+/* Titiluim web */
     @font-face {
         font-family:titiliumweb-black;
         src: url(../assets/fonts/Titillium_Web\ \(2\)/Titillium_Web/titiliumweb-black);
+    }
+    /* inter */
+    @font-face {
+        font-family:inter;
+        src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
     }
 *{
     margin: 0;
     padding: 0%;
    box-sizing: border-box;
-   background-color: #1B1426;
+}
+
+body{
+    background-color: #fff;
+    color: #ffff;
 }
 /* classes genericas */
 .layout-grid{
@@ -21,7 +31,13 @@
 /* header */
 header {
     height: 60px;
-    background-color:#1B1426 ;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    z-index: 20;
+    width: 100vw;
+    height: 60px;
+    background-color: #1B1426;
 }
 
 /* header top */
@@ -46,20 +62,52 @@ header .header-bottom img.logo{
     width: 86px;
 }
 
-header .header-bottom nav{
-    position: fixed;
-    top: 60px;
-    left: 0;
-    width: 80vw;
-    height: calc(100vh - 60px);
-
-    display: flex;
-    flex-direction: column;
-    background-color: grey;
-    border: 1px solid white;    
-}
-
+/* menu lateral direito- icones */
 header .header-bottom .menu-usuarios{
     display: none;
 }
+
+
+header .header-bottom nav {
+    position: fixed;
+    top: 60px;
+    left: -80vw;
+    width: 80vw;
+    height: calc(100vh - 60px);
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+}
+
+/* somente links "filhos diretos" */
+header .header-bottom nav > a {
+    padding: 30px 0;
+    color: white;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 2px solid #F9AA01;
+}
+
+/* gap midias socias */
+header .header-bottom nav .midias-sociais{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+ header .header-bottom nav > a:last-of-type {
+    border-bottom: none;
+} 
+
+
+
 

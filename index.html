@@ -43,26 +43,26 @@
             <div class="layout-grid alinhamento-between-centro"> 
 
                 <!-- menu mobile -->
-                <img class="menu-hamburger" src="assets/icons/menu-hamburguer.png" alt="icone para abrir e fechar o menu mobile">
+                <img onclick="mostrarMenu()" class="menu-hamburger" src="assets/icons/menu-hamburguer.png" alt="icone para abrir e fechar o menu mobile">
                 
                 <img class="logo" src="assets/icons/logotipo-gamerLogotipo.png" alt="logotipo da empresa,texto escrito gamer com um joystick ao centro ">
                 
-                <nav>
+                <nav class="menu" id="menu">
                     <a href="">inico</a>
                     <a href="">jogadores</a>
                     <a href="">equipes</a>
                     <a href="">noticias</a>
                     
                     <!-- visivel apenas no mobile -->
-                    <div class="phone">
+                    <a class="phone">
                         <img src="assets/icons/icone_telefone.png" alt="icone telefone">
                         <span>(11) 0900-1010</span>
-                    </div>
+                    </a>
                     
-                    <div class="email">
+                    <a class="email">
                         <img src="assets/icons/icone_email.png" alt="icone email">
                         <span>contato@gamer.com.br</span>
-                    </div>
+                    </a>
                     
                     <div class="midias-socias">
                         <a href="" >
@@ -97,6 +97,11 @@
             </div>
         </div>
     </header>
-    
+    <script>
+        function mostrarMenu() {
+            document.getElementById("menu").classList.toggle("mostrar-menu");
+            
+        }
+    </script>
 </body>
 </html>
