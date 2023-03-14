@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projeto Gamer</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -64,7 +64,7 @@
                         <span>contato@gamer.com.br</span>
                     </a>
                     
-                    <div class="midias-socias">
+                    <div class="midias-sociais">
                         <a href="" >
                             <img src="assets/icons/Vector-facebook-w.png" alt="imagem icone com link do facebook da empresa">
                         </a>
@@ -79,9 +79,9 @@
                 </nav>
 
                 <!-- menu 3 pontinhos -->
-                <img src="assets/icons/menu-tres-pontinhos.png" alt="icone 3 pontinhos ,abre o menu de usuarios">
+                <img onclick="mostrarMenuUsuario()" src="assets/icons/menu-tres-pontinhos.png" alt="icone 3 pontinhos ,abre o menu de usuarios">
                 
-                <div class="menu-usuarios">
+                <div class="menu-usuarios" id="tres-pontos">
                     <a href="">
                         <img src="assets/icons/bonequinho.png" alt="icone de perfil">
                     </a>
@@ -97,11 +97,27 @@
             </div>
         </div>
     </header>
+    <main>
+        <section class="banner"> 
+            <h1>liga gamers</h1>
+            <a href="" class="botao-sobre">sobre</a>
+        </section>
+
+    </main>
+
+    <footer>   </footer>
+
     <script>
         function mostrarMenu() {
             document.getElementById("menu").classList.toggle("mostrar-menu");
             
         }
+
+        function mostrarMenuUsuario() {
+            document.getElementById("tres-pontos").classList.toggle("menu-user");
+            
+        }
     </script>
+
 </body>
 </html>

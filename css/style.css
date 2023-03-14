@@ -21,7 +21,6 @@ body{
 }
 /* classes genericas */
 .layout-grid{
-    border: 1px solid salmon;
     width: 90%;
     height: 100%;
     margin: 0% auto;
@@ -62,9 +61,9 @@ header .header-bottom img.logo{
     width: 86px;
 }
 
-/* menu lateral direito- icones */
-header .header-bottom .menu-usuarios{
-    display: none;
+/* funcao javascript */
+.mostrar-menu{
+    left: 0 !important;
 }
 
 
@@ -82,7 +81,10 @@ header .header-bottom nav {
 
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
+
+    transition: 0.4s;
 }
+
 
 /* somente links "filhos diretos" */
 header .header-bottom nav > a {
@@ -93,11 +95,39 @@ header .header-bottom nav > a {
     font-size: 15px;
     text-align: center;
     text-decoration: none;
-    border-bottom: 2px solid #F9AA01;
+    /* border-bottom: 2px solid #F9AA01; */
+}
+
+/* menu lateral direito- icones */
+header .header-bottom .menu-usuarios{
+    position: fixed;
+    right: -20vw;  
+    width: 20vw;
+    height: 170px;;
+    padding: 3%;
+    top: 60px;
+    
+   
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+
+   background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+   backdrop-filter: blur(45px);
+   border: white;
+
+   transition: 0.4s;
+}
+
+/* funcao javascript */
+.menu-user{
+    right: 0 !important;
 }
 
 /* gap midias socias */
-header .header-bottom nav .midias-sociais{
+.midias-sociais{
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -108,6 +138,32 @@ header .header-bottom nav .midias-sociais{
     border-bottom: none;
 } 
 
+/* MAIN */
+main{
+    margin-top: 60px;
+}
+/* banner */
+.banner{
+    height: 606px;
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    
+    background-color: #1B1426;
+    background-image: url(../assets/imagens/banner-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
 
+.banner h1{
+    font-family: titiliumweb-black;
+    font-size: 40px;
+    text-shadow: 0 0 7px #fd4255;
+    
+}
+.banner .botao-sobre{
+
+}
 
 
