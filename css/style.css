@@ -1,10 +1,15 @@
 /* imports das fontes */
 /* Titiluim web */
-    @font-face {
-        font-family:titiliumweb-black;
-        src: url(../assets/fonts/Titillium_Web\ \(2\)/Titillium_Web/titiliumweb-black);
-    }
-    /* inter */
+@font-face {
+    font-family:titiliumweb-black;
+    src: url(../assets/fonts/Titillium_Web\ \(2\)/Titillium_Web/titiliumweb-black);
+}
+
+@font-face {
+    font-family: titiliumweb-bold;
+    src: url(../assets/fonts/Titillium_Web\ \(2\)/TitilliumWeb-Bold.ttf);
+}
+/* inter */
     @font-face {
         font-family:inter;
         src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
@@ -74,6 +79,7 @@ header .header-bottom nav {
     width: 80vw;
     height: calc(100vh - 60px);
     padding-bottom: 20px;
+    
 
     display: flex;
     flex-direction: column;
@@ -95,7 +101,7 @@ header .header-bottom nav > a {
     font-size: 15px;
     text-align: center;
     text-decoration: none;
-    /* border-bottom: 2px solid #F9AA01; */
+    border-bottom: 2px solid #F9AA01; 
 }
 
 /* menu lateral direito- icones */
@@ -148,6 +154,9 @@ main{
     width: 100%;
     padding: 40px 0;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     
     background-color: #1B1426;
     background-image: url(../assets/imagens/banner-mobile.png);
@@ -157,13 +166,83 @@ main{
 }
 
 .banner h1{
-    font-family: titiliumweb-black;
+    font-family: titiliumweb-bold;
     font-size: 40px;
     text-shadow: 0 0 7px #fd4255;
     
 }
 .banner .botao-sobre{
+    width: 171px;
+    height: 40px;
+
+    font-family: titiliumweb-bold;
+    font-size: 24px;
+    color: black;
+    text-decoration:none;
+
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    background-color: #F9AA01;
 
 }
 
+/* botao */
+.banner .botao-sobre .a {
+    font-family: titiliumweb-bold;
+    color: black;
 
+}
+
+/* SESSAO CARDS */
+main .sessao-card{
+    width: 100%;
+    height: 588px;
+    background-color: #1B1426;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sessao-card .box-glass{
+    width: 335px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    border-radius:  8px;
+     background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1)); 
+    backdrop-filter: blur(4px);
+
+
+   position: relative;
+   top: -54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sessao-card .box-glass .botao-populares{
+    width: 200px;
+    height: 40px;
+    background-color: #F9AA01;
+    
+    position: relative;
+    left: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sessao-card .box-glass .botao-populares a{
+    font-family: titiliumweb-bold;
+    font-size: 16px;
+    color: black;
+    text-decoration-line: none;
+    
+
+}

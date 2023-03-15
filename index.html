@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Projeto Gamer</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- cabecalho -->
     <header>
@@ -17,75 +19,84 @@
                         <img src="assets/icons/icone_telefone.png" alt="icone telefone">
                         <span>(11) 0900-1010</span>
                     </div>
-    
+
                     <div class="email">
                         <img src="assets/icons/icone_email.png" alt="icone email">
                         <span>contato@gamer.com.br</span>
                     </div>
                 </div>
-    
+
                 <div class="midias-socias">
-                    <a href="" >
-                        <img src="assets/icons/Vector-facebook-w.png" alt="imagem icone com link do facebook da empresa">
+                    <a href="">
+                        <img src="assets/icons/Vector-facebook-w.png"
+                            alt="imagem icone com link do facebook da empresa">
                     </a>
                     <a href="">
-                        <img src="assets/icons/Vector-linkedin-w.png" alt="imagem icone com link do linkedin da empresa">
+                        <img src="assets/icons/Vector-linkedin-w.png"
+                            alt="imagem icone com link do linkedin da empresa">
                     </a>
                     <a href="">
-                        <img src="assets/icons/Vector-instagram-w.png" alt="imagem icone com link do instagram da empresa">
+                        <img src="assets/icons/Vector-instagram-w.png"
+                            alt="imagem icone com link do instagram da empresa">
                     </a>
-    
+
                 </div>
             </div>
         </div>
 
         <div class="header-bottom">
-            <div class="layout-grid alinhamento-between-centro"> 
+            <div class="layout-grid alinhamento-between-centro">
 
                 <!-- menu mobile -->
-                <img onclick="mostrarMenu()" class="menu-hamburger" src="assets/icons/menu-hamburguer.png" alt="icone para abrir e fechar o menu mobile">
-                
-                <img class="logo" src="assets/icons/logotipo-gamerLogotipo.png" alt="logotipo da empresa,texto escrito gamer com um joystick ao centro ">
-                
+                <img onclick="mostrarMenu()" class="menu-hamburger" src="assets/icons/menu-hamburguer.png"
+                    alt="icone para abrir e fechar o menu mobile">
+
+                <img class="logo" src="assets/icons/logotipo-gamerLogotipo.png"
+                    alt="logotipo da empresa,texto escrito gamer com um joystick ao centro ">
+
                 <nav class="menu" id="menu">
                     <a href="">inico</a>
                     <a href="">jogadores</a>
                     <a href="">equipes</a>
                     <a href="">noticias</a>
-                    
+
                     <!-- visivel apenas no mobile -->
                     <a class="phone">
                         <img src="assets/icons/icone_telefone.png" alt="icone telefone">
                         <span>(11) 0900-1010</span>
                     </a>
-                    
+
                     <a class="email">
                         <img src="assets/icons/icone_email.png" alt="icone email">
                         <span>contato@gamer.com.br</span>
                     </a>
-                    
+
                     <div class="midias-sociais">
-                        <a href="" >
-                            <img src="assets/icons/Vector-facebook-w.png" alt="imagem icone com link do facebook da empresa">
+                        <a href="">
+                            <img src="assets/icons/Vector-facebook-w.png"
+                                alt="imagem icone com link do facebook da empresa">
                         </a>
                         <a href="">
-                            <img src="assets/icons/Vector-linkedin-w.png" alt="imagem icone com link do linkedin da empresa">
+                            <img src="assets/icons/Vector-linkedin-w.png"
+                                alt="imagem icone com link do linkedin da empresa">
                         </a>
                         <a href="">
-                            <img src="assets/icons/Vector-instagram-w.png" alt="imagem icone com link do instagram da empresa">
+                            <img src="assets/icons/Vector-instagram-w.png"
+                                alt="imagem icone com link do instagram da empresa">
                         </a>
                     </div>
-                    
+
                 </nav>
 
                 <!-- menu 3 pontinhos -->
-                <img onclick="mostrarMenuUsuario()" src="assets/icons/menu-tres-pontinhos.png" alt="icone 3 pontinhos ,abre o menu de usuarios">
-                
+                <img onclick="mostrarMenuUsuario()" src="assets/icons/menu-tres-pontinhos.png"
+                    alt="icone 3 pontinhos ,abre o menu de usuarios">
+
                 <div class="menu-usuarios" id="tres-pontos">
                     <a href="">
                         <img src="assets/icons/bonequinho.png" alt="icone de perfil">
                     </a>
-                    
+
                     <a href="">
                         <img src="assets/icons/sacolinha.png" alt="icone de sacolinha">
                     </a>
@@ -93,31 +104,48 @@
                         <img src="assets/icons/lupa.png" alt="icone de lupa">
                     </a>
                 </div>
-                
+
             </div>
         </div>
     </header>
     <main>
-        <section class="banner"> 
+        <!-- BANNER -->
+        <section class="banner">
             <h1>liga gamers</h1>
             <a href="" class="botao-sobre">sobre</a>
         </section>
 
+        <!-- CARDS POPULARES-->
+
+        <div class="sessao-card">
+            <div> <img src="assets/imagens/Card-FIFA.png"
+             alt=" primeira card  com texto fifa 23 e ao lado uma imagem de um jogador de futebol ">
+            <div class="box-glass"> <div class="botao-populares"> <a href=""> mais popular</a></div> </div>
+        </div>
+
+
+            <div> <img src="assets/imagens/Card-CS GO.png" alt="segunda card com uma imagem de dois soldados">
+            <div class="box-glass"> <div class="botao-populares"> <a href=""> último jogo</a> </div> </div>
+            </div>
+
+        </div>
+
     </main>
 
-    <footer>   </footer>
+    <footer> </footer>
 
     <script>
         function mostrarMenu() {
             document.getElementById("menu").classList.toggle("mostrar-menu");
-            
+
         }
 
         function mostrarMenuUsuario() {
             document.getElementById("tres-pontos").classList.toggle("menu-user");
-            
+
         }
     </script>
 
 </body>
+
 </html>
