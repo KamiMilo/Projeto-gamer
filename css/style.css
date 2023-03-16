@@ -213,57 +213,108 @@ main .sessao-cards{
 
 }
 
-/* Desktop >=1200px*/
-@media screen and (min-width: 1200px){
+/* Desktops >= 1200px*/
+@media screen and (min-width: 1200px) {
     .layout-grid {
         width: 100%;
         max-width: 1200px;
+        /* border: 3px dotted yellowgreen; */
+    }
 
-        border: 3px dotted yellowgreen;
+    /* HEADER  */
+    header {
+        position: static;
+        height: 140px;
+    }
+
+    header .header-top{
+        /* valor inline default da maioria dos elementos */
+     display: block;
+     height: 50px;
+     border-bottom: 2px solid #F9AA01;  
+    }
+
+    
+    header .header-top .contatos {
+        width: 415px;
+        display: flex;
+        justify-content: space-between;
+        
+        font-family: inter;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    header .header-top .contatos > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        gap: 10px;
+        
+    }
+
+    header .header-top .midias-sociais{
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+
+    header .menu-hamburger,
+    header .menu-pontinhos,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .email,
+    header .header-bottom nav .midias-sociais {
+        display: none;
+    }
+
+    header .header-bottom{
+        height: 90px;
+    }
+    header .header-bottom img.logo {
+        width: 200px;
+    }
+    header .header-bottom nav {
+        position: static;
+        width: 440px;
+        height: 50px;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        /* background-color: red; */
+    }
+
+    header .header-bottom nav > a {
+        border: none;
+        font-size: 14px;
+    }
+
+    header .header-bottom .menu-usuarios {
+        position: static;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 120px;
+        height: auto;
+        background-color: transparent;
+    }
+   /* BANNER */
+   .banner{
+    height: 722px;
+    /* imagem de fundo */
+    background-image: url(../assets/imagens/Banner_background_1.png);
+    background-size: cover;
+    background-position: top;
+   }
+
+   .banner h1 {
+    font-size: 80px;
+   }
+
+    /* MAIN */
+    main {
+        margin-top: 0;
     }
 }
-
-/* header */
-header {
-    position: static;
-    height: 140px;
-}
-
-header .menu-hamburguer,
-header .tres-pontos img,
-header .header-bottom nav .phone,
-header .header-bottom nav .email,
-header .header-bottom nav .midias-sociais{
-    display: none;
-}
-
-header .header-bottom img .logo {
-    width:200px;
-}
- 
-header .header-bottom nav{
-    position: static;
-    width: 440px;
-    height: 50px;
-    flex-direction: row;
-    background-color: red;
-
-
-}
-
-header .header-bottom .menu-usuarios{
-    position: static;
-    flex-direction: row;
-    width: 180px;
-    height: 50px;
-    background-color: transparent;
-}
-
-
-/* main */
-main{
-    margin-top: 0%;
-}
-
 
 
