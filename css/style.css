@@ -4,6 +4,10 @@
     font-family:titiliumweb-black;
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
 }
+@font-face {
+    font-family:titiliumweb-regular;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
 
 @font-face {
     font-family: titiliumweb-bold;
@@ -33,7 +37,7 @@ body{
 /* classes genericas */
 .layout-grid{
     width: 90%;
-    height: 100%;
+    /* height: 100%;  */
     margin: 0% auto;
 }
 
@@ -224,7 +228,7 @@ footer {
     box-shadow: inset 0 30px 60px rgba(0, 0, 0, 1);
     background-image: url(../assets/imagens/backgroung_footer.png);
     background-position: top;
-    background-size: contain;
+    /* background-size: contain; */
 }
  footer #sobre{
     width:100%;
@@ -248,9 +252,96 @@ footer {
     /* background-color: #F9AA01; */
     width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 25px;
+    justify-content: space-between;
  }
+
+ footer .footer-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1530px;
+ }
+
+ footer .footer-top .titulos-footer h3{
+    font-family:titiliumweb-black;
+    font-size: 30px;
+
+ }
+ footer .footer-top .titulos-footer hr{
+    border: 2px solid #F9AA01;
+    width: 112px;
+ }
+
+ footer .footer-top .menu-footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+ }
+
+ /* itens da lista */
+ footer .footer-top .menu-footer li{
+    list-style-type: none;
+    width: 110px;
+    margin-bottom: 20px;
+
+ }
+
+ footer .footer-top .menu-footer a{
+    color: white;
+    text-decoration: none;
+    font-family: titiliumweb-bold;
+    font-size: 16px;
+ }
+
+ footer .footer-top .menu-footer a:before{
+    content: "\2015";
+    margin-right: 10px;
+    color: #F9AA01;
+ }
+ /* Contatos */
+ footer .footer-top #contatos p{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+ }
+
+ footer .footer-top #contatos p span{
+    color: #F9AA01;
+ }
+
+ /* Newsletter */
+    footer #newsletter input,
+    footer #newsletter button{
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+        border-radius: 8px;
+    }
+    footer #newsletter input{
+        background-color: transparent;
+        background-image: linear-gradient(to right bottom, rgba(239, 239, 239, .6), rgba(239, 239, 239, .1) );
+        backdrop-filter: blur(6px);
+        border: 1px solid white;
+        color: white;
+        padding: 5px 10px;
+        font-family:titiliumweb-regular;
+        font-size: 16px;
+    }
+
+    footer #newsletter input::placeholder {
+        color: white;
+    }
+
+    footer #newsletter button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F9AA01;
+        font-family:titiliumweb-bold;
+        font-size: 16px;
+    }
+
+
 /* tablets >=768px*/
 @media screen and (min-width: 768px){
 
