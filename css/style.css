@@ -36,8 +36,8 @@ body{
 }
 /* classes genericas */
 .layout-grid{
-    width: 90%;
-    margin: 3% auto;
+    width: 92%;
+    margin: auto;
 }
 
 /* MOBILE FIRST */
@@ -65,6 +65,7 @@ header .header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px;
 }
 
 header .header-bottom {
@@ -173,7 +174,7 @@ main{
     
     background-color: #1B1426;
     background-image: url(../assets/imagens/banner-mobile.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
 }
@@ -221,13 +222,14 @@ main .sessao-cards{
     align-items: center;
 }
 
+/* background fundo */
 footer {
     padding-top: 60px;
     padding-bottom:30px;
     box-shadow: inset 0 30px 60px rgba(0, 0, 0, 1);
     background-image: url(../assets/imagens/backgroung_footer.png);
     background-position: top;
-    /* background-size: contain; */
+    background-size: cover; 
 }
  footer #sobre{
     width:100%;
@@ -340,7 +342,22 @@ footer {
         font-size: 16px;
     }
 
+    #botao-voltar{ 
+    position: relative;
+    left: 273px;
+    bottom: 20px;
+    }
+    .footer-end p{
+        font-family:titiliumweb-regular;
+        font-size: 16px;
+        font-style: none;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+ 
 
 /* tablets >=768px*/
 @media screen and (min-width: 768px){
@@ -348,53 +365,59 @@ footer {
 }
 
 /* Desktops >= 1200px*/
-@media screen and (min-width: 1200px) {
-    .layout-grid {
+@media screen and (min-width: 1200px){
+
+
+    .layout-grid .alinhamento-between-centro {
         width: 100%;
         max-width: 1200px;
         /* border: 3px dotted yellowgreen; */
     }
 
-    /* HEADER  */
-    header {
+      /* HEADER  */
+      header {
         position: static;
         height: 140px;
+        margin-top: -10px;
     }
 
-    header .header-top{
-        /* valor inline default da maioria dos elementos */
-     display: block;
-     height: 50px;
-     border-bottom: 2px solid #F9AA01;  
+    /* Header Top */
+    header .header-top {
+        /* block é o valor default da maioria dos elementos */
+        display: block;
+        height: 50px;
+        border-bottom: 2px solid #F9AA01;
     }
 
-    
     header .header-top .contatos {
         width: 415px;
         display: flex;
         justify-content: space-between;
-        
-        font-family: inter;
+
+        font-family: Inter;
         font-size: 14px;
         font-weight: 400;
-    }
-    
-    header .header-top .contatos > div{
-        display: flex;
-        justify-content: space-between;
-        align-items: center; 
-        gap: 10px;
-        
+
+        /* border: 2px solid white; */
     }
 
-    header .header-top .midias-sociais{
+    header .header-top .contatos>div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        /* border: 1px solid yellow; */
+    }
+
+    header .header-top .midias-sociais {
         width: 120px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        /* border: 2px solid white; */
     }
-    
 
+    /* Esconde elementos desnecessários */
     header .menu-hamburger,
     header .menu-pontinhos,
     header .header-bottom nav .phone,
@@ -403,12 +426,15 @@ footer {
         display: none;
     }
 
-    header .header-bottom{
+    /* Header Bottom */
+    header .header-bottom {
         height: 90px;
     }
+
     header .header-bottom img.logo {
         width: 200px;
     }
+
     header .header-bottom nav {
         position: static;
         width: 440px;
@@ -419,11 +445,12 @@ footer {
         /* background-color: red; */
     }
 
-    header .header-bottom nav > a {
+    header .header-bottom nav>a {
         border: none;
         font-size: 14px;
     }
-    header .header-bottom nav>a:hover{
+
+    header .header-bottom nav>a:hover {
         background-color: transparent;
         color: #F9AA01;
     }
