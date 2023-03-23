@@ -7,51 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de login</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-
-        main {
-            width: 100%;
-            height: 687px;
-
-            background-image: url(assets/imagens/back-login.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-
-            
-        }
-        .tabela-login {
-            border: 1px solid salmon;
-            display: flex;
-            justify-content: space-around;
-            
-        }
-        .tabela-login hr{
-            width: 30px;
-            color: black;
-        }
-        .titulo-login {
-            font-size: 20px;
-            color: red;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-        }
-        /* containers email/senha */
-        .tabela-login .box {
-            width: 273px;
-            height: 40px;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-        }
-        .tabela-login h1{
-            
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
@@ -154,6 +110,32 @@
         </div>
     </header>
     <main>
+        <div class="tabela-login layout-grid ">
+            <div class="titulo-login">
+                <hr class="linha">
+                <h1>Login</h1>
+            </div>
+                <form action="">
+
+                    <div class="box">
+                         <img src="assets/icons/profile.svg" alt="">
+                           <input type="email" id="email" placeholder="Digite seu e-mail:">
+                           <br>
+                    </div>
+       
+                    <div class="box">
+                           <img src="assets/icons/key.svg" alt="">
+                           <input type="password" id="senha" placeholder="Digite sua senha:"> 
+                           <br>
+                     </div>
+                     
+                     <div id="botao-Logar">
+                       <p>Logar</p>
+                     </div>
+                </form>
+
+        </div>
+
         
     </main>
 

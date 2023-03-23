@@ -1,0 +1,94 @@
+
+main {
+    width: 100%;
+    height: 687px;
+
+    background-image: url(../assets/imagens/Banner_Login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabela-login {
+    width: 335px;
+    height: 462px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right bottom,rgba(27, 20, 38, 0.6),rgba(59, 3, 64, 0.3));
+    backdrop-filter: blur(10px);
+
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+form{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabela-login .titulo-login .linha{
+    width: 90px;
+    color:#F9AA01;
+}
+
+.titulo-login {
+    font-size: 20px;
+    color: red;
+    display: flex;
+     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/* containers email/senha */
+
+.tabela-login .box{
+    width: 273px;
+    height: 40px;
+    padding-left: 5px;
+    /* border: 1px solid red; */
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to right,rgba(255, 255, 255, 0.6),rgb(255, 255, 255, 0.4));
+}
+.tabela-login input {
+    width: 80%;
+    height: 40px;
+    /* border-radius:8px; */
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+.tabela-login h1{
+    font-family: titiliumweb-black;
+    font-size: 28px;
+    color: white;
+}
+#botao-Logar{
+    width: 273px;
+    height: 40px;
+    background-color: #F9AA01;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botao-Logar p{
+    font-family: titiliumweb-bold;
+    font-size: 24px;
+    color: #1B1426;
+    
+}
