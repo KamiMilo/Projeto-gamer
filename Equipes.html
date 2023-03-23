@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de login</title>
+    <title>Projeto Gamer</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/equipes.css">
 </head>
 
 <body>
@@ -56,7 +56,7 @@
                     alt="logotipo da empresa,texto escrito gamer com um joystick ao centro ">
 
                 <nav class="menu" id="menu">
-                    <a href="">inico</a>
+                    <a href="">inicio</a>
                     <a href="">jogadores</a>
                     <a href="">equipes</a>
                     <a href="">noticias</a>
@@ -110,37 +110,31 @@
         </div>
     </header>
     <main>
-        <div class="tabela-login layout-grid ">
-            <div class="titulo-login">
-                <hr id="linha">
-                <h1>LOGIN</h1>
-            </div>
-                <form action="">
+        <section class="form-cadrastro" >
+            <form action="">
+                <div >
+                <input type="text" id="id" placeholder="Digite o ID da sua equipe:"  >
+                </div>
 
-                    <div class="box">
-                         <img src="assets/icons/profile.svg" alt="">
-                           <input type="email" id="email" placeholder="Digite seu e-mail:">
-                           <br>
-                    </div>
-       
-                    <div class="box">
-                           <img src="assets/icons/key.svg" alt="">
-                           <input type="password" id="senha" placeholder="Digite sua senha:"> 
-                           <br>
-                     </div>
-                     
-                     <div id="botao-Logar">
-                       <p>Logar</p>
-                     </div>
-                </form>
+                <div >
+                    <input type="text" id="nome" placeholder="Digite o nome da sua equipe:"  >
+                </div>
+                
+                <div>
+                    <button>imagem da equipe</button>
+                    <p>nenhuma imagem selecionada...</p>
+                </div>
 
-        </div>
+                <div id="botao-cadastro">
+                    <p>Cadastro</p>
+                    
+                </div>
+            </form>
+        </section>
 
-        
     </main>
 
     <footer>
-
         <div class="layout-grid footer-top">
             <div id="sobre">
                 <img src="assets/icons/logotipo-gamerLogotipo.png" alt="">
