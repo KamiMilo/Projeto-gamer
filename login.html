@@ -7,6 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de login</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+
+        main {
+            width: 100%;
+            height: 687px;
+
+            background-image: url(assets/imagens/back-login.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            
+        }
+        .tabela-login {
+            border: 1px solid salmon;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .tabela-login hr{
+            width: 30px;
+            color: black;
+        }
+        .titulo-login {
+            font-size: 20px;
+            color: red;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* containers email/senha */
+        .tabela-login .box {
+            width: 273px;
+            height: 40px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+        .tabela-login h1{
+            
+        }
+
+    </style>
 </head>
 
 <body>
@@ -109,10 +154,11 @@
         </div>
     </header>
     <main>
-
+        
     </main>
 
     <footer>
+
         <div class="layout-grid footer-top">
             <div id="sobre">
                 <img src="assets/icons/logotipo-gamerLogotipo.png" alt="">
@@ -188,15 +234,26 @@
                 </form>
 
             </div>
-
-
-            <div class="layout-grid footer-bottom">
-                <p id="rights">Todos os DIreitos Reservados</p>
-
-             </div>
+             
+            <div class="footer-end">
+                <img src="assets/icons/Botao_voltar_ao_topo.svg" alt="" id="botao-voltar">
+                <p>&copy;todos os direitos reservados </p>
+            </div>
 
 
     </footer>
+
+    <script>
+        function mostrarMenu() {
+            document.getElementById("menu").classList.toggle("mostrar-menu");
+
+        }
+
+        function mostrarMenuUsuario() {
+            document.getElementById("tres-pontos").classList.toggle("menu-user");
+
+        }
+    </script>
 
 </body>
 
