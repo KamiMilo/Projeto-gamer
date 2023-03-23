@@ -1,7 +1,148 @@
-
+/* EQUIPES */
 main{
     width:374px;
     height:1231px;
-    border: 1px solid red;
+    background-image: url(../assets/imagens/Banner_cadastro_de_Equipe.png);
+    background-size: cover;
+    background-color: rgba(217, 217, 217, 0.851);
+
+    padding-top: 77px;
 }
+
+    /* Box:formulario do cadastro */
+.form-cadrastro{
+    width: 335px;
+    height: 492px;
+    /* margin-top: 80px;  */
+    border-radius: 8px;
+    background-image: linear-gradient(to right bottom,rgba(27, 20, 38, 0.6),rgba(59, 3, 64, 0.3));
+    backdrop-filter: blur(5px);
+    padding-bottom: 45px;
+
+    border: 1px solid white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title-equipes h1{
+   font-family:  titiliumweb-black;
+   font-size: 28px;
+}
+
+#linha{
+    width: 250px;
+    border: 2px solid #F9AA01 ;
+    border-left: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .box{
+    width: 273px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid red;
+    padding-left: 5px;
+    border: 1px solid white; 
+    border-radius: 8px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to right,rgba(255, 255, 255, .6),rgb(255, 255, 255, .1));
+
+}
+
+   
+ .form-cadrastro input{
+    width: 273px;
+    height: 40px;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+} 
+
+.form-cadrastro input::placeholder{
+    font-family:titiliumweb-regular;
+    color: white;
+}
+
+#botao-imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#botao-imagem button{
+    width: 124px;
+    height: 40px;
+    border-radius: 8px;
+
+    font-family: titiliumweb-bold;
+    font-size: 13px ;
+}
+#botao-imagem p{
+    font-family:titiliumweb-regular;
+    font-size: 10px;
+    margin-top: 14px;
+}
+
+#botao-cadastro{
+    width: 268px ;
+    height: 40px;
+    background-color: #F9AA01;
+    border-top: 13px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#botao-cadastro p{
+    font-family: titiliumweb-bold;
+    font-size: 24px;
+    color: #1B1426 ;
+
+}
+
+/*Section  Tabelas */
+
+h1{
+    text-align: center;
+}
+
+table{
+    width: 328px;
+    height: 325px;
+    /* border: 1px solid black; */
+    margin: 20px auto 0;
+}
+table th{
+    /* border: 1px solid salmon;  */
+    font-family: titiliumweb-black;
+    font-size: 20px;
+    color: #F9AA01;
+    text-align: center;
+
+    border-bottom: 2px solid #F9AA01;
+}
+
+table tbody td{
+    border-right: 2px solid green;
+}
+
+table td{
+    border-right: 10px solid black;
+}
+
+table tbody td:last-of-type{
+    border: none;
+}
+
 

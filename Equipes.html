@@ -110,26 +110,74 @@
         </div>
     </header>
     <main>
-        <section class="form-cadrastro" >
+        <section class="form-cadrastro layout-grid" >
+            <div class="title-equipes">
+                <h1>CADASTRO DE EQUIPES</h1>
+                <hr id="linha">
+            </div>
+
             <form action="">
-                <div >
-                <input type="text" id="id" placeholder="Digite o ID da sua equipe:"  >
+                <div class="box" >
+                <input type="number" id="id" placeholder="Digite o ID da sua equipe:"  >
                 </div>
 
-                <div >
+                <div class="box">
                     <input type="text" id="nome" placeholder="Digite o nome da sua equipe:"  >
                 </div>
                 
-                <div>
+                <div id="botao-imagem">
                     <button>imagem da equipe</button>
                     <p>nenhuma imagem selecionada...</p>
                 </div>
-
-                <div id="botao-cadastro">
-                    <p>Cadastro</p>
-                    
-                </div>
             </form>
+            <div id="botao-cadastro">
+                <p>Cadastro</p>
+            </div>
+        </section>
+
+        <section class="tab-equipes">
+            <table>
+                <thead>
+                    <tr>
+                       <th>ID</th>
+                       <th>NOME</th>
+                       <th>FOTO</th>
+                       <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>LOUD</td>
+                        <td> <img src="assets/icons/LOUD_LOGO 1.svg" alt=""></td>
+                        <td><img src="assets/icons/icon-trash.svg" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>LOUD</td>
+                        <td> <img src="assets/icons/LOUD_LOGO 1.svg" alt=""></td>
+                        <td><img src="assets/icons/icon-trash.svg" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>LOUD</td>
+                        <td> <img src="assets/icons/LOUD_LOGO 1.svg" alt=""></td>
+                        <td><img src="assets/icons/icon-trash.svg" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>LOUD</td>
+                        <td> <img src="assets/icons/LOUD_LOGO 1.svg" alt=""></td>
+                        <td><img src="assets/icons/icon-trash.svg" alt=""></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
         </section>
 
     </main>

@@ -1,3 +1,6 @@
+
+
+     /* PRINCIPAL */
 /* imports das fontes */
 /* Titiluim web */
 @font-face {
@@ -220,6 +223,84 @@ main .sessao-cards{
     flex-direction: column;
    justify-content: space-evenly; 
     align-items: center;
+}
+
+
+/* SESSAO PROGRAMER */
+.sessao-progamer{
+    width: 375px;
+     height: 1535px; 
+
+    background-color: #F9AA01;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+
+.sessao-progamer .space-skills{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sessao-progamer hr{
+    width: 204px;
+    border: 1px solid #1B1426;
+}
+
+.sessao-progamer h3{
+    font-family: titiliumweb-black; 
+    color: #1B1426;
+
+    padding-top: 20px ;
+    padding-bottom: 20px;
+
+}
+
+.sessao-progamer .skill,
+.sessao-progamer .skill{
+    position: relative;
+    padding-top: 64px;
+
+}
+
+.sessao-progamer .box-informativo1,
+.sessao-progamer .box-informativo2{
+    width: 231px;
+    height: 300px;
+    position: absolute;
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(47, 7, 109, .8));
+    backdrop-filter: blur(15px);
+    border-radius: 8px;
+
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sessao-progamer .box-informativo1{
+    top: 30%;
+    left: 79px;
+}
+.sessao-progamer .box-informativo2{
+    top: 211px;
+}
+
+
+.sessao-progamer .box-informativo1 h3,
+.sessao-progamer .box-informativo2 h3{
+    font-family: titiliumweb-black; 
+    font-size: 18px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px #C6A5E5;
+}
+
+.sessao-progamer .box-informativo p{
+    font-family:Quicksand; 
+    font-size: 13px;
 }
 
 /* background fundo */
