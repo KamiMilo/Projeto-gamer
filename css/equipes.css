@@ -27,16 +27,27 @@ main{
     align-items: center;
 }
 
+.title-equipes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .title-equipes h1{
    font-family:  titiliumweb-black;
    font-size: 28px;
 }
 
-#linha{
+.title-equipes hr{
+    width: 250px;
+    border: 2px solid #F9AA01 ;
+    
+}
+
+/* #linha{
     width: 250px;
     border: 2px solid #F9AA01 ;
     border-left: 10px;
-}
+} */
 
 form{
     display: flex;
