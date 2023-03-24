@@ -3,7 +3,7 @@ main{
     width:374px;
     height:1231px;
     background-image: url(../assets/imagens/Banner_cadastro_de_Equipe.png);
-    background-size: cover;
+    background-size: contain;
     background-color: rgba(217, 217, 217, 0.851);
 
     padding-top: 77px;
@@ -117,13 +117,29 @@ h1{
     text-align: center;
 }
 
+.form-cadrastro
+
 table{
-    width: 328px;
+    width: 100%;
     height: 325px;
     /* border: 1px solid black; */
     margin: 20px auto 0;
 }
-table th{
+
+table tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: ;
+}
+
+table thead{
+    width: 336px;
+    height: 51px;
+}
+
+table thead tr{
     /* border: 1px solid salmon;  */
     font-family: titiliumweb-black;
     font-size: 20px;
@@ -131,6 +147,13 @@ table th{
     text-align: center;
 
     border-bottom: 2px solid #F9AA01;
+}
+
+table tbody{
+    width: 334px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 table tbody td{
