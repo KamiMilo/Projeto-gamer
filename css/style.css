@@ -39,7 +39,7 @@ body{
 }
 /* classes genericas */
 .layout-grid{
-    width: 92%;
+    width: 100%;
     margin: auto;
 }
 
@@ -68,11 +68,12 @@ header .header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 header .header-bottom {
     height: 100%;
+    padding: 10px;
 }
 
 header .header-bottom img.logo{
@@ -229,7 +230,8 @@ main .sessao-cards{
 /* SESSAO PROGRAMER */
 .sessao-progamer{
     width: 100%;
-     height: 1535px; 
+    height: 1312px; 
+    padding-bottom: 64px;
 
     background-color: #F9AA01;
     display: flex;
@@ -238,10 +240,11 @@ main .sessao-cards{
     align-items: center;
 }
 
-.sessao-progamer .space-skills{
+.sessao-progamer .titulo-programer{
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .sessao-progamer hr{
@@ -249,14 +252,16 @@ main .sessao-cards{
     border: 1px solid #1B1426;
 }
 
-.sessao-progamer h3{
+.sessao-progamer h2{
+    width: 100%;
     font-family: titiliumweb-black; 
     color: #1B1426;
 
-    padding-top: 20px ;
-    padding-bottom: 20px;
+   padding-top: 20px ;
+    padding-bottom: 20px; 
 
 }
+
 
 .sessao-progamer .skill,
 .sessao-progamer .skill{
@@ -270,11 +275,12 @@ main .sessao-cards{
     width: 231px;
     height: 300px;
     position: absolute;
+    border-color: linear-gradient(to right bottom, rgba(122, 49, 236, .2),rgba(122, 49, 236, .8) );
     background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(47, 7, 109, .8));
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(5px);
     border-radius: 8px;
 
-    border: 1px solid white;
+    /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -286,7 +292,8 @@ main .sessao-cards{
     left: 79px;
 }
 .sessao-progamer .box-informativo2{
-    top: 211px;
+    top: 37%;
+    left: 24px;
 }
 
 
@@ -298,16 +305,19 @@ main .sessao-cards{
     text-shadow: 2px 2px #C6A5E5;
 }
 
-.sessao-progamer .box-informativo p{
+.sessao-progamer .box-informativo1 p,
+.sessao-progamer .box-informativo2 p{
     font-family:Quicksand; 
     font-size: 13px;
+    text-align: center;
 }
 
 /* background fundo */
 footer {
-    padding-top: 60px;
-    padding-bottom:30px;
+    padding: 40px 20px;
     box-shadow: inset 0 30px 60px rgba(0, 0, 0, 1);
+    background-color:  #1B1426;
+    background-size: cover;
     background-image: url(../assets/imagens/backgroung_footer.png)
 
 }
@@ -423,10 +433,11 @@ footer {
     }
 
     #botao-voltar{ 
-    position: relative;
-    left: 273px;
-    bottom: 20px;
+     position: fixed;
+    right: 20px;
+    bottom: 32px;
     }
+
     .footer-end p{
         font-family:titiliumweb-regular;
         font-size: 16px;
@@ -451,14 +462,18 @@ footer {
     .layout-grid .alinhamento-between-centro {
         width: 100%;
         max-width: 1200px;
+        margin-top: 0;
+        /* padding: 30px; */
         /* border: 3px dotted yellowgreen; */
     }
 
       /* HEADER  */
       header {
+        width: 100%;
         position: static;
         height: 140px;
-        margin-top: -10px;
+        flex-wrap: wrap;
+        /* margin-top: -10px; */
     }
 
     /* Header Top */
@@ -467,6 +482,7 @@ footer {
         display: block;
         height: 50px;
         border-bottom: 2px solid #F9AA01;
+        /* padding: 20px; */
     }
 
     header .header-top .contatos {
@@ -490,9 +506,9 @@ footer {
     }
 
     header .header-top .midias-sociais {
-        width: 120px;
+        /* width: 120px; */
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         align-items: center;
         /* border: 2px solid white; */
     }
@@ -509,6 +525,7 @@ footer {
     /* Header Bottom */
     header .header-bottom {
         height: 90px;
+        padding: 10px 0;
     }
 
     header .header-bottom img.logo {
@@ -573,6 +590,53 @@ footer {
     main .sessao-cards img {
         width: 556px;
     }
+
+    /* SESSAO PROGRAMER */
+
+    main .sessao-progamer{
+        height: auto;
+    }
+
+    main .sessao-progamer .titulo-programer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .sessao-progamer .titulo-programer hr{
+        width: 60%;
+    }
+
+    main .sessao-progamer .titulo-programer h2{
+        letter-spacing: 5px;
+    }
+    main .sessao-progamer .space-skills {
+        padding: 31px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    main .sessao-progamer .skill{
+        padding-top: 64px;
+        margin-left: 82px;
+        margin-right: 87px;
+    }
+
+    main .sessao-progamer .skill img{
+        height: 100%;
+        width: auto;
+    }
+
+
+    /* FOOTER */
+
+    #botao-voltar{
+        position: fixed;
+        right: 30px;
+    }
+
 
 
 }
