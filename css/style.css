@@ -432,11 +432,12 @@ footer {
         font-size: 16px;
     }
 
-    #botao-voltar{ 
+    .botao-voltar{ 
      position: fixed;
     right: 20px;
     bottom: 32px;
     }
+
 
     .footer-end p{
         font-family:titiliumweb-regular;
@@ -471,7 +472,7 @@ footer {
       header {
         width: 100%;
         position: static;
-        height: 140px;
+        height: auto;
         flex-wrap: wrap;
         /* margin-top: -10px; */
     }
@@ -482,6 +483,7 @@ footer {
         display: block;
         height: 50px;
         border-bottom: 2px solid #F9AA01;
+        padding: 8px 33px 11px;
         /* padding: 20px; */
     }
 
@@ -525,7 +527,7 @@ footer {
     /* Header Bottom */
     header .header-bottom {
         height: 90px;
-        padding: 10px 0;
+        padding: 8px 33px 11px;
     }
 
     header .header-bottom img.logo {
@@ -559,6 +561,7 @@ footer {
         width: 120px;
         height: auto;
         background-color: transparent;
+        backdrop-filter: none;
     }
    /* BANNER */
    .banner{
@@ -632,11 +635,35 @@ footer {
 
     /* FOOTER */
 
-    #botao-voltar{
+ 
+
+    footer .layout-grid  {
+        padding: 20px 43px 20px;
+        height: auto;
+        display: flex;
+        justify-items: center;
+        flex-direction: row;
+    }
+
+    footer .menu-footer{
+        flex-direction: column;
+    }
+
+    footer #sobre{
+        display: flex;
+        flex-wrap: wrap;
+        width: 20%;
+    }
+  
+
+    footer .footer-end{
+        padding-top: 6%;
+    }
+
+    .botao-voltar{
         position: fixed;
         right: 30px;
     }
-
 
 
 }
